@@ -84,7 +84,7 @@ function Main() {
       <div className="to-do-container">
 
         {/* عنوان التطبيق */}
-        <h1>To Do List</h1>
+        <h1>To Do app</h1>
 
         {/* وصف حقل الإدخال */}
         <p>Add a new task</p>
