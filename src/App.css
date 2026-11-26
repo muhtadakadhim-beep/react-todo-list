@@ -1,0 +1,139 @@
+
+/* =========================
+   تنسيق الصفحة الرئيسية
+========================= */
+ .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+} 
+
+/* =========================
+   تنسيق حاوية To Do List
+========================= */
+ .to-do-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  box-sizing: border-box;
+} 
+
+/* =========================
+   تنسيق العنوان والوصف
+========================= */
+.to-do-container h1 {
+  text-align: center;
+  margin-bottom: 15px;
+} 
+
+ .to-do-container p {
+  text-align: center;
+  margin-bottom: 20px;
+} 
+
+/* =========================
+   تنسيق حقل الإدخال وزر الإضافة
+========================= */
+ .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+} 
+
+/* تنسيق حقل إدخال المهمة */
+.input-group input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+} 
+
+/* تنسيق زر إضافة المهمة */
+ .add-btn {
+  background-color: #388e3c;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  white-space: nowrap;
+} 
+
+/* تغيير لون زر الإضافة عند مرور الماوس */
+ .add-btn:hover {
+  background-color: #2e7d32;
+  transform: translateY(-2px);
+} 
+
+/* =========================
+   تنسيق قائمة المهام
+========================= */
+ .to-do-container ul {
+  width: 100%;
+  padding: 0;
+  margin-top: 25px;
+} 
+
+/* تنسيق كل مهمة داخل القائمة */
+ .todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  background-color: #252525;
+  border: 1px solid #444;
+  border-radius: 8px;
+  list-style: none;
+  cursor: pointer;
+} 
+
+/* تنسيق نص المهمة */
+ .todo-item span {
+  flex: 1;
+  overflow-wrap: anywhere;
+} 
+
+/* تنسيق المهمة المكتملة */
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+} 
+
+/* =========================
+   تنسيق زر حذف المهمة
+========================= */
+.delete-btn {
+  background-color: #d32f2f;
+  color: white;
+  padding: 7px 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+} 
+
+/* تغيير لون زر الحذف عند مرور الماوس */
+ .delete-btn:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+} 
